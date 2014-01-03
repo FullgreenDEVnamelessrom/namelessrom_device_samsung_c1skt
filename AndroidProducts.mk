@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c1skt.mk
+    $(LOCAL_DIR)/full_c1skt.mk \
+    $(LOCAL_DIR)/nameless_c1skt.mk

@@ -21,9 +21,6 @@
 # lines, full and toro, hence its name.
 #
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/nameless/config/gsm.mk)
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
@@ -39,3 +36,13 @@ PRODUCT_DEVICE := c1skt
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SHV-E210S
+
+# Build description
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="samsung/m0xx/m0:4.3/JSS15J/I9300XXUGMJ9:user/release-keys" \
+    PRIVATE_BUILD_DESC="m0xx-user 4.3 JSS15J I9300XXUGMJ9 release-keys"
+
+# Override product name and device
+PRODUCT_BUILD_PROP_OVERRIDES += \
+     PRODUCT_NAME=c1skt \
+     TARGET_DEVICE=c1skt

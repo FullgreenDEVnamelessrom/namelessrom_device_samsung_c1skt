@@ -1,5 +1,9 @@
 system/bin/glgps
 system/lib/hw/gps.exynos4.so:system/lib/hw/gps.tegra3.so
+system/bin/rild
+system/lib/libreference-ril.so
 system/lib/libakm.so
+system/lib/libril.so
 system/lib/libsec-ril.so
+system/lib/libsecril-client.so
 system/usr/keylayout/sec_touchkey.kl
